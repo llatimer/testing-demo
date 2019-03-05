@@ -1,0 +1,8 @@
+.sfdx/
+.project
+.salesforce
+.settings
+.vscode/
+.classpath
+.DS_Store
+.idea
