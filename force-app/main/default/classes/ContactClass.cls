@@ -47,19 +47,6 @@ public with sharing class ContactClass {
     //     private set; 
     // }
 
-    // @TestVisible
-    // private static List<Account> getModifiedAccounts(Set<Id> accountIds) { 
-    //     if (modifiedAccounts.isEmpty() && !accountIds.isEmpty()) {
-
-    //         modifiedAccounts = [select Id, Contact_Count__c, 
-    //                                  (select Id, AccountId 
-    //                                     from Contacts) 
-    //                             from Account 
-    //                            where Id in :accountIds];
-    //     }
-    //     return modifiedAccounts;
-    // }    
-
     // // Rollup Contact count to Account on any add, delete or transfer of Contact
     // // Meant to be called from a trigger.
     // public static void rollupContactCount(List<Contact> contactsNew, Map<Id, Contact> contactsOld) {
@@ -72,7 +59,7 @@ public with sharing class ContactClass {
     //     updateAccounts(updatedAccounts);
 
     //     modifiedAccounts = null;
-    // }
+    // }    
 
     // @TestVisible
     // private static Set<Id> getModifiedContacts(List<Contact> contactsNew, Map<Id, Contact> contactsOld) { 
@@ -92,6 +79,19 @@ public with sharing class ContactClass {
     //     }
     //     return accountIds;
     // }
+
+    // @TestVisible
+    // private static List<Account> getModifiedAccounts(Set<Id> accountIds) { 
+    //     if (modifiedAccounts.isEmpty() && !accountIds.isEmpty()) {
+
+    //         modifiedAccounts = [select Id, Contact_Count__c, 
+    //                                  (select Id, AccountId 
+    //                                     from Contacts) 
+    //                             from Account 
+    //                            where Id in :accountIds];
+    //     }
+    //     return modifiedAccounts;
+    // }    
 
     // @TestVisible
     // private static List<Account> doContactRollup(List<Account> modifiedAccounts) { 
