@@ -13,6 +13,8 @@ pool:
 steps: 
 - script: |
     echo Installing sfdx-cli
-    npm install sfdx-cli --local
+    npm install sfdx-cli --global
 
-- bash: ls
+- bash: |
+  ls
+  sfdx version
