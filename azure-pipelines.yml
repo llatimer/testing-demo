@@ -15,3 +15,6 @@ steps:
     echo Installing sfdx-cli
     npm install sfdx-cli --local
     pwd
+    './home/vsts/work/sfdx version'
+    './home/vsts/work/1/sfdx version'
+    './home/vsts/work/1/s/sfdx version'
