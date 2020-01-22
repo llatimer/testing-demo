@@ -15,5 +15,5 @@ steps:
     echo Installing sfdx-cli
     npm install sfdx-cli --local
 
-- bash: 
+- bash: |
   sfdx version
