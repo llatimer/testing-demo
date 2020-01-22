@@ -17,4 +17,4 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    #script: 'sfdx version'
+    script: 'sfdx version'
