@@ -9,10 +9,12 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
   demands: npm
+  
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      npm install sfdx-cli --local
+      sfdx version
 
-steps: 
-- script: |
-    workingDirectory: 'work-dir'
-    echo Installing sfdx-cli
-    npm install sfdx-cli --local
-    'sfdx version'
+    
