@@ -10,11 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
   demands: npm
 
-steps:
-- script: echo Installing sfdx-cli
-- script: npm install sfdx-cli --local
-
+steps: 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    echo Installing sfdx-cli
+    npm install sfdx-cli --local
+    sfdx version
