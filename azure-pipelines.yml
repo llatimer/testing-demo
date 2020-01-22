@@ -14,4 +14,4 @@ steps:
 - script: |
     echo Installing sfdx-cli
     npm install sfdx-cli --local
-    'where sfdx'
+    pwd
