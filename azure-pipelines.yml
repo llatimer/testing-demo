@@ -12,7 +12,6 @@ pool:
 
 steps: 
 - script: |
-    npm audit fix
     echo Installing sfdx-cli
     npm install sfdx-cli --local
     sfdx help
