@@ -15,7 +15,7 @@ steps:
     echo Installing sfdx-cli
     npm install sfdx-cli --local
 
-- task: Npm@1
+- task:
   displayName: 'get sfdx version'
   inputs:
     command: custom
